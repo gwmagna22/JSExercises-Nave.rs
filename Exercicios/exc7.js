@@ -5,7 +5,7 @@ var pessoas = [
     {id: 4, nome: 'gabriel', sobrenome: 'pinheiro',  idade: 21}
 ]
 
-pessoas.map(function(currentValue) {
+pessoas.forEach(function(currentValue) {
     const nameCapitalized = currentValue.nome.charAt(0).toUpperCase() + currentValue.nome.slice(1)
     console.log(`Olá, ${nameCapitalized} ${currentValue.sobrenome}`)
 })

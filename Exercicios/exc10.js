@@ -5,7 +5,7 @@ var pessoas = [
     {id: 4, nome: 'gabriel', sobrenome: 'pinheiro',  idade: 21}
 ]
 
-pessoas.map(function(currentValue) {
+pessoas.forEach(function(currentValue) {
     if (currentValue.idade < 30) {
         console.log(currentValue)
     }

@@ -5,10 +5,7 @@ var aux = frase.split('')
 for (i = 0; i < aux.length; i++) {
     if (!isNaN(aux[i]) && aux[i] != " ") {
         aux[i] = dicionario[parseInt(frase[i])]
-    } else if (aux[i] == "undefined") {
-        aux[i] = " co"
-    }
-    
+    }  
 }
 
 frase = aux.join('');
